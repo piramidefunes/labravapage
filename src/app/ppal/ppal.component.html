@@ -1,0 +1,252 @@
+
+<!-- Barra de Menu Superior y Primera Sección-->
+<div class="container-fluid sticky-top fontsec">
+  
+        <nav class="navbar navbar-expand-lg navbar-dark p-0 ">
+            <a href="index.html" class="navbar-brand">
+                <img class="img-fluid i60x60 mt-2 ms-5" src="assets/Sol-LB.png">
+            </a>
+            <img class="img-fluid mt-2" src="assets/bandab50.png">        
+
+            <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link active">Inicio</a>
+                    <a href="#discos" class="nav-item nav-link">Discos</a>
+                    <a href="#historia" class="nav-item nav-link">Historia</a>
+                    <a href="#fechas" class="nav-item nav-link">Fechas</a>
+                    <a href="https://wa.me/5493416626466" class="nav-item nav-link" target="_blank">
+                      <img src="assets/whatsapp.png" class="i25x25 me-4" alt="...">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    
+</div>
+
+<div class="container-fluid py-5" id="fechas">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+    <div class="container card bg-dark bg-opacity-10 mb-5 bg-body-tertiary rounded"> 
+        <img src="assets/logo-LB380.png" class="img-fluid autocenter mt-4 object-fit-cover border border-success rounded" alt="...">
+        <h3 class="card-title text-center text-white" style="font-style: italic;">
+          en...
+        </h3>
+        <img [src]="escenario" class=" img-fluid autocenter mt-2 i250" alt="...">
+        <div class="card-body">
+            <h3 class="card-title text-white" style="font-size: 3rem;">
+              {{fecha}}
+            </h3>
+            <p class="card-text text-xl-end text-white" style="font-size: 1.5rem;">
+              Entradas, {{entradas}}
+            </p>
+            <a (click)="verEnMapa()" class="btn btn-outline-primary px-4 py-0 fontsec">
+              Ubicación
+            </a>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Segunda Sección (En el menu: Discos) -->
+
+<div class="container-fluid py-5" id="discos">
+    <div class="container text-center">
+        <div class="row g-5 justify-content-center">
+
+            <div class="col-lg-6">  
+                <div class="container-fluid card bg-opacity-10 bg bg-dark">
+                    <img class="img-fluid autocenter rounded mt-2 mb-2" src="assets/ojoenchivilcoy.jpg">
+                </div>
+                 
+                <div class="container-fluid card mt-2 bg-opacity-10 bg bg-dark text-white-50" >
+                    @for (sng of discos; track sng.id) {
+                      @if(sng.disco =='Contrato Social'){ 
+                        <b (click)= "openModal(modalSong, sng.id)"  class=" mt-2 cursor"> 
+                            {{sng.ord}} - {{sng.titulo}} - {{sng.dura}} 
+                        </b>
+                      } 
+                    }
+                </div>
+
+                <a class="btn btn-outline-primary rounded-pill m-3 fontsec" [href]="you1" target="_blank">
+                <i class="fab fa-youtube"></i> 
+                ... escuchalas en Youtube
+                </a>
+                <a class="btn btn-outline-primary btn-square m-3 fontsec" [href]="insta" target="_blank"><i class="fab fa-instagram"></i>
+                ... seguinos en Instagram
+                </a>
+                <div class="mt-2">
+                  <i class="text-white fontsec">{{voz}}</i>
+                </div>
+                <div>
+                  <i class="text-white fontsec">{{bateria}}</i>
+                </div>
+                <div>
+                  <i class="text-white fontsec">{{bajo}}</i>
+                </div>
+                <div>
+                  <i class="text-white fontsec">{{guitarra}}</i>
+                </div>
+                <div class="mt-3">
+                  <i class="text-white-50 fontsec">{{grab1}}</i>
+                </div>
+                <div>
+                  <i class="text-white-50 fontsec">{{mezc1}}</i>
+                </div>
+                <div>
+                  <i class="text-white-50 fontsec">{{lym}}</i>
+                </div>
+                <div>
+                  <i class="text-white-50 fontsec">{{cyp}}</i>
+                </div> 
+              
+              </div>
+
+            <div class="col-lg-6">            
+                <div class="container-fluid card bg-opacity-10 bg bg-dark">
+                    <img class="img-fluid rounded mt-2 mb-2 border border-secondary" src="assets/solorock.jpg">
+                </div>
+
+                <div class="container-fluid card mt-2 bg-opacity-10 bg bg-dark text-white" >
+                    @for (sng of discos; track sng.id) {       
+                      @if(sng.disco =='Bajo la Luz de la Luna'){          
+                        <i (click)= "openModal(modalSong, sng.id)"  class = "cursor">
+                             {{sng.ord}} - {{sng.titulo}} - {{sng.dura}}
+                        </i> 
+                      }
+                    }
+                </div>
+                <span class="text-primary fontsec"> escuchalas en Youtube ...
+                <a class="btn btn-outline-primary btn-square-pill m-3" [href]="you2" ><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-primary btn-square m-3" [href]="insta" target="_blank"><i class="fab fa-instagram"></i></a>
+                ... seguinos en Instagram
+                </span>
+                <div class="">
+                  <i class="text-white fontsec">{{voz}}</i>
+                </div>
+                <div>
+                  <i class="text-white fontsec">{{bateria}}</i>
+                </div>
+                <div>
+                  <i class="text-white fontsec">{{bajo}}</i>
+                </div>
+                <div>
+                  <i class="text-white fontsec">{{guitarra}}</i>
+                </div>
+                <!--
+                <div class="mt-3">
+                  <i class="text-white-50 fontsec">{{grab2}}</i>
+                </div>
+                <div>
+                  <i class="text-white-50 fontsec">{{mezc2}}</i>
+                </div>
+                <div>
+                  <i class="text-white-50 fontsec">{{lym}}</i>
+                </div>
+                <div>
+                  <i class="text-white-50 fontsec">{{cyp}}</i>
+                </div>
+              -->
+
+                <!-- acordion-->
+                <div class="accordion mt-3 fontsec">
+                  <div class="accordion-item bg-dark border border-primary">
+                      <h2 class="accordion-header">
+                          <i class="accordion-button collapsed bg-dark text-primary rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              ... más datos del disco?
+                          </i>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ1">
+                          <div class="accordion-body">
+                            <div class="">
+                              <i class="text-white-50 fontsec">{{grab2}}</i>
+                            </div>
+                            <div>
+                              <i class="text-white-50 fontsec">{{mezc2}}</i>
+                            </div>
+                            <div>
+                              <i class="text-white-50 fontsec">{{lym}}</i>
+                            </div>
+                            <div>
+                              <i class="text-white-50 fontsec">{{cyp}}</i>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Tercera seccion - Historia--> 
+<div class="container-fluid py-5 text-center" id="historia">
+    <div id="imagenes" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#imagenes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#imagenes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#imagenes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#imagenes" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#imagenes" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#imagenes" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#imagenes" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#imagenes" data-bs-slide-to="7" aria-label="Slide 8"></button>            
+        </div>
+        <div class="carousel-inner">
+          @for (item of images; track item.id) {
+            @if(item.id == 1){
+            <div class="carousel-item active">
+              <img [src]="item.img" class="img-fluid rounded d-block autocenter border" alt="...">
+                <div class="carousel-caption d-none d-md-block text-white">
+                  <h5>{{item.txt1}}</h5>
+                  <p class="text-white-50">{{item.txt2}}.</p>
+                </div>
+            </div>
+            } @else{
+              <div class="carousel-item">
+                <img [src]="item.img" class="img-fluid rounded d-block autocenter border" alt="...">
+                  <div class="carousel-caption d-none d-md-block text-white">
+                    <h5>{{item.txt1}}</h5>
+                    <p class="text-white-50">{{item.txt2}}.</p>
+                  </div>
+              </div>
+            }
+          }
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imagenes" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imagenes" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</div>
+
+<div class="container-fluid py-0" id="">
+    <div class="card bg-dark bg-opacity-10 mb-3 rounded"> 
+        <img src="assets/Sol-LB.png" class=" img-fluid mt-2 i60x60 autocenter" alt="...">
+
+            <p class="card-title text-white autocenter">La Nueva Generación del Rock Rosarino</p>
+            <p class="card-text text-white-50 autocenter" style="font-size: .90rem;">Todos los derechos reservados de La Brava</p>
+            <p class="card-text text-white autocenter" style="font-size: 1.25rem;">Palta Producciones</p>
+
+        <a href="#" class="btn btn-outline-primary autocenter rounded-pill px-4 py-1 mb-3 mt-2"><i class="fa fa-arrow-up"></i></a>
+    </div>
+</div>
+
+
+<!-- llamado al modalSong --> 
+<ng-template #modalSong>
+    <app-modalsong [tema]="song" [exitModal]="exitModal"/>
+</ng-template>
+

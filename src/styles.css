@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-image:url(assets/qsr3es2.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .autocenter{
+    width: auto;
+    margin: auto auto; 
+}
+
+/**/
+
+@font-face {
+  font-family: "Bokor";
+  /*src: url("assets/fonts/Philosopher-Regular.ttf");*/
+  src: url("assets/fonts/Bokor-Regular.ttf");
+}
+/**/
+
+
+.fontgral {
+  font-family: Bokor, Geneva, Tahoma, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.fontsec {
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: lighter;
+  }
+

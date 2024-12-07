@@ -1,0 +1,24 @@
+
+<div class="card flex flex-col text-primary text-center bg-dark fontsec">
+
+    <div class="flex mt-3">
+    <audio controls>
+        <source [src]="cancion" type="audio/mpeg">
+    </audio>
+    </div>
+
+    <i class="fontgral" style="font-size: 2rem; font-style: italic;"> {{title}} </i>
+
+    <hr>
+    @for (verso of song; track $index) {
+    <p class="my-0"> {{song[$index]}}</p> 
+    }
+    
+    <div class="flex mb-3 mt-3">
+        <div class="btn btn-outline-primary px-3 py-0 text-center" style="font-size:.85rem;"(click)="exitModal()" >
+        {{ "Cerrar" }}
+        </div>
+    </div>
+
+</div>
+
