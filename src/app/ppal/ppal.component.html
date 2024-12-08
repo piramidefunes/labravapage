@@ -56,15 +56,17 @@
   </div>
 </div>
 
-<!-- Segunda Sección (En el menu: Discos) -->
+<!-- Segunda Sección -->
 
 <div class="container-fluid py-5" id="discos">
     <div class="container text-center">
         <div class="row g-5 justify-content-center">
 
+          <!-- primer disco -->
+
             <div class="col-lg-6">  
                 <div class="container-fluid card bg-opacity-10 bg bg-dark">
-                    <img class="img-fluid autocenter rounded mt-2 mb-2" src="assets/ojoenchivilcoy.jpg">
+                    <img class="img-fluid rounded mt-2 mb-2 border border-secondary" src="assets/ojoenchivilcoy.jpg">
                 </div>
                  
                 <div class="container-fluid card mt-2 bg-opacity-10 bg bg-dark text-white-50" >
@@ -81,9 +83,10 @@
                 <i class="fab fa-youtube"></i> 
                 ... escuchalas en Youtube
                 </a>
-                <a class="btn btn-outline-primary btn-square m-3 fontsec" [href]="insta" target="_blank"><i class="fab fa-instagram"></i>
+                <a class="btn btn-outline-primary rounded-pill m-3 fontsec" [href]="insta" target="_blank"><i class="fab fa-instagram"></i>
                 ... seguinos en Instagram
                 </a>
+
                 <div class="mt-2">
                   <i class="text-white fontsec">{{voz}}</i>
                 </div>
@@ -111,6 +114,8 @@
               
               </div>
 
+              <!-- segundo disco -->
+
               <div class="col-lg-6">            
                 <div class="container-fluid card bg-opacity-10 bg bg-dark">
                     <img class="img-fluid rounded mt-2 mb-2 border border-secondary" src="assets/solorock.jpg">
@@ -126,11 +131,13 @@
                     }
                 </div>
 
-                <span class="text-primary fontsec"> escuchalas en Youtube ...
-                <a class="btn btn-outline-primary btn-square-pill m-3" [href]="you2" ><i class="fab fa-youtube"></i></a>
-                <a class="btn btn-outline-primary btn-square m-3" [href]="insta" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-primary rounded-pill m-3 fontsec" [href]="you2" target="_blank">
+                <i class="fab fa-youtube"></i> 
+                ... escuchalas en Youtube
+                </a>
+                <a class="btn btn-outline-primary rounded-pill m-3 fontsec" [href]="insta" target="_blank"><i class="fab fa-instagram"></i>
                 ... seguinos en Instagram
-                </span>
+                </a>
 
                 <div>
                   <i class="text-white fontsec">{{voz}}</i>
@@ -146,47 +153,18 @@
                 </div>
                 
                 <div class="mt-3">
-                  <i class="text-white fontsec">{{grab2}}</i>
+                  <i class="text-white-50 fontsec">{{grab2}}</i>
                 </div>
                 <div>
-                  <i class="text-white fontsec">{{mezc2}}</i>
+                  <i class="text-white-50 fontsec">{{mezc2}}</i>
                 </div>
                 <div>
-                  <i class="text-white fontsec">{{lym}}</i>
+                  <i class="text-white-50 fontsec">{{lym}}</i>
                 </div>
                 <div>
-                  <i class="text-white fontsec">{{cyp}}</i>
+                  <i class="text-white-50 fontsec">{{cyp}}</i>
                 </div>
 
-                <!-- acordion-->
-                <!--
-                <div class="accordion mt-3 fontsec">
-                  <div class="accordion-item bg-dark border border-primary">
-                      <h2 class="accordion-header">
-                          <i class="accordion-button collapsed bg-dark text-primary rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                              ... más datos del disco?
-                          </i>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ1">
-                          <div class="accordion-body">
-                            <div class="">
-                              <i class="text-white-50 fontsec">{{grab2}}</i>
-                            </div>
-                            <div>
-                              <i class="text-white-50 fontsec">{{mezc2}}</i>
-                            </div>
-                            <div>
-                              <i class="text-white-50 fontsec">{{lym}}</i>
-                            </div>
-                            <div>
-                              <i class="text-white-50 fontsec">{{cyp}}</i>
-                            </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                -->
-              
               </div>
         </div>
     </div>
@@ -194,7 +172,8 @@
 
 <!-- Tercera seccion - Historia--> 
 <div class="container-fluid py-5 text-center" id="historia">
-    <div id="imagenes" class="carousel slide">
+
+    <div id="imagenes" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#imagenes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#imagenes" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -208,7 +187,7 @@
         <div class="carousel-inner">
           @for (item of images; track item.id) {
             @if(item.id == 1){
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="17500">
               <img [src]="item.img" class="img-fluid rounded d-block autocenter border" alt="...">
                 <div class="carousel-caption d-none d-md-block text-white">
                   <h5>{{item.txt1}}</h5>
@@ -216,7 +195,7 @@
                 </div>
             </div>
             } @else{
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="1750">
                 <img [src]="item.img" class="img-fluid rounded d-block autocenter border" alt="...">
                   <div class="carousel-caption d-none d-md-block text-white">
                     <h5>{{item.txt1}}</h5>
@@ -237,9 +216,9 @@
     </div>
 </div>
 
-<div class="container-fluid py-0" id="">
+<div class="container-fluid py-0">
     <div class="card bg-dark bg-opacity-10 mb-3 rounded"> 
-        <img src="assets/Sol-LB.png" class=" img-fluid mt-2 i60x60 autocenter" alt="...">
+        <img src="assets/Sol-LB.png" class=" img-fluid mt-2 i50x50 autocenter" alt="...">
 
             <p class="card-title text-white autocenter">La Nueva Generación del Rock Rosarino</p>
             <p class="card-text text-white-50 autocenter" style="font-size: .90rem;">Todos los derechos reservados de La Brava</p>
