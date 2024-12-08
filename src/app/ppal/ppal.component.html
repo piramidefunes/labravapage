@@ -1,10 +1,9 @@
 
 <!-- Barra de Menu Superior y Primera Sección-->
-<div class="container-fluid sticky-top fontsec">
-  
+<div class="container-fluid sticky-top fontsec"> 
         <nav class="navbar navbar-expand-lg navbar-dark p-0 ">
             <a href="index.html" class="navbar-brand">
-                <img class="img-fluid i60x60 mt-2 ms-5" src="assets/Sol-LB.png">
+                <img class="img-fluid i50x50 mt-2 ms-1" src="assets/Sol-LB.png">
             </a>
             <img class="img-fluid mt-2" src="assets/bandab50.png">        
 
@@ -13,14 +12,19 @@
             </button>
         
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-item nav-link active">Inicio</a>
-                    <a href="#discos" class="nav-item nav-link">Discos</a>
-                    <a href="#historia" class="nav-item nav-link">Historia</a>
-                    <a href="#fechas" class="nav-item nav-link">Fechas</a>
+                <div class="navbar-nav ms-auto mt-2">
+                    <a href="#" class="nav-item nav-link active mt-1">Inicio</a>
+                    <a href="#discos" class="nav-item nav-link mt-1">Discos</a>
+                    <a href="#historia" class="nav-item nav-link mt-1">Historia</a>
+                    <a href="#fechas" class="nav-item nav-link mt-1">Fechas</a>
+                    <a [href]="insta" class="nav-item nav-link" target="_blank">
+                      <img src="assets/instagram.png" class="i30x30 me-2" alt="...">
+                    </a>
+                    <!--
                     <a href="https://wa.me/5493416626466" class="nav-item nav-link" target="_blank">
                       <img src="assets/whatsapp.png" class="i25x25 me-4" alt="...">
                     </a>
+                    -->
                 </div>
             </div>
         </nav>
@@ -107,7 +111,7 @@
               
               </div>
 
-            <div class="col-lg-6">            
+              <div class="col-lg-6">            
                 <div class="container-fluid card bg-opacity-10 bg bg-dark">
                     <img class="img-fluid rounded mt-2 mb-2 border border-secondary" src="assets/solorock.jpg">
                 </div>
@@ -121,12 +125,14 @@
                       }
                     }
                 </div>
+
                 <span class="text-primary fontsec"> escuchalas en Youtube ...
                 <a class="btn btn-outline-primary btn-square-pill m-3" [href]="you2" ><i class="fab fa-youtube"></i></a>
                 <a class="btn btn-outline-primary btn-square m-3" [href]="insta" target="_blank"><i class="fab fa-instagram"></i></a>
                 ... seguinos en Instagram
                 </span>
-                <div class="">
+
+                <div>
                   <i class="text-white fontsec">{{voz}}</i>
                 </div>
                 <div>
@@ -138,22 +144,22 @@
                 <div>
                   <i class="text-white fontsec">{{guitarra}}</i>
                 </div>
-                <!--
+                
                 <div class="mt-3">
-                  <i class="text-white-50 fontsec">{{grab2}}</i>
+                  <i class="text-white fontsec">{{grab2}}</i>
                 </div>
                 <div>
-                  <i class="text-white-50 fontsec">{{mezc2}}</i>
+                  <i class="text-white fontsec">{{mezc2}}</i>
                 </div>
                 <div>
-                  <i class="text-white-50 fontsec">{{lym}}</i>
+                  <i class="text-white fontsec">{{lym}}</i>
                 </div>
                 <div>
-                  <i class="text-white-50 fontsec">{{cyp}}</i>
+                  <i class="text-white fontsec">{{cyp}}</i>
                 </div>
-              -->
 
                 <!-- acordion-->
+                <!--
                 <div class="accordion mt-3 fontsec">
                   <div class="accordion-item bg-dark border border-primary">
                       <h2 class="accordion-header">
@@ -179,11 +185,10 @@
                       </div>
                   </div>
                 </div>
+                -->
               
-            </div>
-
+              </div>
         </div>
-
     </div>
 </div>
 
