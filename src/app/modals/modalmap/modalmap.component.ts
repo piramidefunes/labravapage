@@ -12,8 +12,9 @@ import { NgbActiveModal, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalmapComponent {
 
-  sitio="Somos Música"
+  sitio='"Somos Música"';
   address = 'San martin 1372';
+  localidad = 'Rosario';
   latitud = -32.95379;
   longitud = -60.6385261;
   opciones: google.maps.MapOptions = {

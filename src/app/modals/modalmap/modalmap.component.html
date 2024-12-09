@@ -1,29 +1,30 @@
 
-<div class="card flex-col fontsec map" style="height: 550px;">
-  <div class="text-center">
+<div class="flex-col justify-content-center bg bg-dark rounded fontsec map">
+  <div class="text-center mt-1">
     <span class="text-primary"
-      >{{ sitio }} - {{ address }}</span>
-      <span (click)="modalMap.close(false)" class="ms-3 btn btn-outline-primary px-3 py-0 text-center" style="font-size:.85rem;">
-        {{ "Cerrar" }}
-      </span>
+      ><i>{{ sitio }}</i> - {{ address }} - {{localidad}}
+    </span>
   </div>
-<div>
-  <google-map
-  [options]="opciones"
-  [zoom]="16"
-  [center]="{ lat: latitud, lng: longitud }"
-  >
-  <map-advanced-marker
-    #markerElem="mapAdvancedMarker"
-    [position]="{ lat: latitud, lng: longitud }"
-    title = {{sitio}}
-  />
-</google-map>
-</div>
 
-<div (click)="modalMap.close(false)" class=" flex btn btn-outline-primary px-3 py-0 text-center" style="font-size:.85rem;">
-  {{ "Cerrar" }}
+  <div class="w-full mb-2 mt-2">
+    <google-map
+      [options]="opciones"
+      [zoom]="16"
+     [center]="{ lat: latitud, lng: longitud }"
+      >
+     <map-advanced-marker
+        #markerElem="mapAdvancedMarker"
+        [position]="{ lat: latitud, lng: longitud }"
+        title = {{sitio}}
+     />
+    </google-map>
   </div>
+
+<div class="text-center mt-1 mb-1">
+  <a (click)="modalMap.close(false)" class="btn btn-outline-primary px-3 py-0 rounded-pill fontsec" style="font-size:.85rem;">
+     {{ "Cerrar" }}
+  </a>
+</div>
 
 </div>
 

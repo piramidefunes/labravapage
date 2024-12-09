@@ -1,7 +1,7 @@
 
 <!-- Barra de Menu Superior y Primera Sección-->
 <div class="container-fluid sticky-top fontsec"> 
-        <nav class="navbar navbar-expand-lg navbar-dark p-0 ">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
             <a href="index.html" class="navbar-brand">
                 <img class="img-fluid i50x50 mt-2 ms-1" src="assets/Sol-LB.png">
             </a>
@@ -73,7 +73,7 @@
                 <div class="container-fluid card mt-2 bg-opacity-10 bg bg-dark text-white" >
                     @for (sng of discos; track sng.id) {
                       @if(sng.disco =='Contrato Social'){ 
-                        <i (click)= "openModal(modalSong, sng.id)"  class=" mt-1 cursor"> 
+                        <i (click)= "openModal(modalSong, sng.id)"  class="mt-1 cursor"> 
                             {{sng.ord}} - {{sng.titulo}} - {{sng.dura}} 
                         </i>
                       } 
@@ -217,19 +217,19 @@
     </div>
 </div>
 
-<div class="container-fluid py-0">
-    <div class="card bg-dark bg-opacity-10 mb-3 rounded"> 
+<div class="container mt-3 mb-5">
+    <div class="card bg-dark bg-opacity-10 mb-3 rounded text-center"> 
         <img src="assets/Sol-LB.png" class=" img-fluid i50x50 autocenter" alt="...">
 
-            <p class="card-title text-white text-center mt-2" style="font-size: 1.25rem;">
+            <b class="text-white" style="font-size: 1.25rem;">
               La Nueva Generación del Rock Rosarino
-            </p>
-            <p class="card-text text-white-50 text-center fontsec" style="font-size: .90rem;">
+            </b>
+            <b class="text-white-50 fontsec" style="font-size: .90rem;">
               Todos los derechos reservados de La Brava
-            </p>
-            <p class="card-text text-white text-center" style="font-size: 1.25rem;">
-              <i>Palta Producciones</i>
-            </p>
+            </b>
+            <b class="text-white" style="font-size: 1.25rem;">
+              Palta Producciones
+            </b>
 
         <a href="#" class="btn btn-outline-primary autocenter rounded-pill px-4 py-1 mb-3 mt-1"><i class="fa fa-arrow-up"></i></a>
     </div>
