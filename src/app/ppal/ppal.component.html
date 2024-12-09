@@ -41,13 +41,13 @@
         </h3>
         <img [src]="escenario" class=" img-fluid autocenter mt-2 i250" alt="...">
         <div class="card-body">
-            <h3 class="card-title text-white" style="font-size: 3rem;">
+            <h3 class="card-title text-white text-center" style="font-size: 3rem;">
               {{fecha}}
             </h3>
-            <p class="card-text text-xl-end text-white" style="font-size: 1.5rem;">
-              Entradas, {{entradas}}
+            <p class="card-text text-white text-center " style="font-size: 1.25rem;">
+              <i>Entradas, {{entradas}}</i>
             </p>
-            <a (click)="verEnMapa()" class="btn btn-outline-primary px-4 py-0 fontsec">
+            <a (click)="verEnMapa()" class="btn btn-outline-primary px-4 py-0 rounded-pill fontsec">
               Ubicación
             </a>
         </div>
@@ -65,16 +65,17 @@
           <!-- primer disco -->
 
             <div class="col-lg-6">  
+              
                 <div class="container-fluid card bg-opacity-10 bg bg-dark">
                     <img class="img-fluid rounded mt-2 mb-2 border border-secondary" src="assets/ojoenchivilcoy.jpg">
                 </div>
                  
-                <div class="container-fluid card mt-2 bg-opacity-10 bg bg-dark text-white-50" >
+                <div class="container-fluid card mt-2 bg-opacity-10 bg bg-dark text-white" >
                     @for (sng of discos; track sng.id) {
                       @if(sng.disco =='Contrato Social'){ 
-                        <b (click)= "openModal(modalSong, sng.id)"  class=" mt-2 cursor"> 
+                        <i (click)= "openModal(modalSong, sng.id)"  class=" mt-1 cursor"> 
                             {{sng.ord}} - {{sng.titulo}} - {{sng.dura}} 
-                        </b>
+                        </i>
                       } 
                     }
                 </div>
@@ -221,7 +222,7 @@
         <img src="assets/Sol-LB.png" class=" img-fluid mt-2 i50x50 autocenter" alt="...">
 
             <p class="card-title text-white autocenter">La Nueva Generación del Rock Rosarino</p>
-            <p class="card-text text-white-50 autocenter" style="font-size: .90rem;">Todos los derechos reservados de La Brava</p>
+            <p class="card-text text-white-50 autocenter" style="font-size: .80rem;">Todos los derechos reservados de La Brava</p>
             <p class="card-text text-white autocenter" style="font-size: 1.25rem;">Palta Producciones</p>
 
         <a href="#" class="btn btn-outline-primary autocenter rounded-pill px-4 py-1 mb-3 mt-2"><i class="fa fa-arrow-up"></i></a>

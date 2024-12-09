@@ -24,7 +24,7 @@ guitarra = 'Matías Zaffaroni - GUITARRA';
 
   escenario = 'assets/escenarios/somosmusica.png';
   fecha = '16 de Noviembre del 2024';
-  entradas = 'Por Ticketec ...';
+  entradas = '... pedilas por nuestro Instagram';
   direccion = 'San Martín 1372 - Rosario';
 
   you1 = 'https://www.youtube.com/watch?v=TtqFtIzlxhU&list=OLAK5uy_lqMcBPznr5IVZA-gMsJe09-GM92_Dmn-c';
