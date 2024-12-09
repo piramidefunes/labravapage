@@ -1,5 +1,35 @@
 
+<div class="card flex-col fontsec map" style="height: 550px;">
+  <div class="text-center">
+    <span class="text-primary"
+      >{{ sitio }} - {{ address }}</span>
+      <span (click)="modalMap.close(false)" class="ms-3 btn btn-outline-primary px-3 py-0 text-center" style="font-size:.85rem;">
+        {{ "Cerrar" }}
+      </span>
+  </div>
+<div>
+  <google-map
+  [options]="opciones"
+  [zoom]="16"
+  [center]="{ lat: latitud, lng: longitud }"
+  >
+  <map-advanced-marker
+    #markerElem="mapAdvancedMarker"
+    [position]="{ lat: latitud, lng: longitud }"
+    title = {{sitio}}
+  />
+</google-map>
+</div>
 
+<div (click)="modalMap.close(false)" class=" flex btn btn-outline-primary px-3 py-0 text-center" style="font-size:.85rem;">
+  {{ "Cerrar" }}
+  </div>
+
+</div>
+
+
+
+<!--
 <div class="card flex flex-col text-primary text-center bg-dark fontsec justify-around px-2">
 
   <div class="flex flex-col mt-2">
@@ -31,4 +61,4 @@
   </div>
 
 </div>
-
+-->
