@@ -520,8 +520,8 @@ song13 = [
 'Ya me voy, ya me voy', 
 'Ya me voy, por ahí', 
 'Ya me voy, ya me voy', 
-'Abajo del techito,', 
-'Abajo del techito esperando por vos',
+'Abajo de un techito,', 
+'Esperando por vos',
 '.',
 'Me mata la incertidumbre',
 'De lo que yo hago bien o mal', 
@@ -537,15 +537,13 @@ song13 = [
 'Ya me voy, me voy por ahí', 
 'Ya me voy, ya me voy', 
 'Abajo de un techito', 
-'O en el rayo del sol',
-'Abajo de un techito esperando por vos',
+'Esperando por vos',
 '.',
 'Ya me voy, ya me voy', 
 'Ya me voy, me voy por ahí', 
 'Ya me voy, ya me voy', 
 'Abajo de un techito', 
-'O en el rayo del sol',
-'Abajo de un techito esperando por vos'
+'Esperando por vos'
 ];
 
 

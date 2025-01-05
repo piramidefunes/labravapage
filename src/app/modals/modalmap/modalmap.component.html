@@ -1,5 +1,5 @@
 
-<div class="flex-col justify-content-center bg bg-dark rounded fontsec map">
+<div class="flex-col justify-content-center border border-primary bg-dark rounded fontsec map">
   <div class="text-center mt-1">
     <span class="text-primary"
       ><i>{{ sitio }}</i> - {{ address }} - {{localidad}}
@@ -9,8 +9,8 @@
   <div class="w-full mb-2 mt-2">
     <google-map
       [options]="opciones"
-      [zoom]="16"
-     [center]="{ lat: latitud, lng: longitud }"
+      [zoom]="15"
+      [center]="{ lat: latitud, lng: longitud }"
       >
      <map-advanced-marker
         #markerElem="mapAdvancedMarker"

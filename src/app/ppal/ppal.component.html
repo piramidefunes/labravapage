@@ -1,13 +1,69 @@
 
-<!-- Barra de Menu Superior y Primera Sección-->
+<!--
+<nav class="navbar navbar-expand-lg fontsec sticky-top bg bg-dark bg-opacity-25">
+  <div class="container-fluid">
+      
+      <a href="index.html" class="navbar-brand">
+        <img class="img-fluid i50x50 mt-2 ms-1" src="assets/Sol-LB.png">                
+      </a>
+
+      <img class="img-fluid mt-2" src="assets/bandab50.png">
+
+      <button class="navbar-toggler text-white" type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#menuLateral">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <section class="offcanvas offcanvas-start bg bg-dark bg-opacity-10" id="menuLateral" tabindex="-1">
+
+          <div class="offcanvas-header" >
+
+              <button class="btn-close text-white"
+              type="button"
+              aria-label="Close" 
+              data-bs-dismiss="offcanvas">
+              </button>
+          </div>
+
+          <div class="offcanvas-body d-flex flex-column justify-content-between px=0">
+              <ul class="navbar-nav fs-5 justify-content-end">
+                  <li class="navbar-item p-2 py-md-2"><a href="#" class="nav-item nav-link active mt-1 text-white">Inicio</a></li>
+                  <li class="navbar-item p-2 py-md-2"><a href="#discos" class="nav-item nav-link mt-1 text-white">Discos</a></li>
+-->
+                  <!--
+                    <button class="btn text-white bg bg-dark bg-opacity-25 ms-1 p-1"
+                    type="button" 
+                    data-bs-dismiss="offcanvas"
+                    >
+                    Disc
+                    </button>
+                  -->
+<!--
+                  <li class="navbar-item p-2 py-md-2"><a href="#historia" class="nav-item nav-link mt-1 text-white">Historia</a></li>
+                  <li class="navbar-item p-2 py-md-2"><a href="#fechas" class="nav-item nav-link mt-1 text-white">Fechas</a></li>
+                  <li class="navbar-item p-2 py-md-2"><a [href]="insta" class="nav-item nav-link" target="_blank">
+                    <img src="assets/instagram.png" class="i30x30 me-2" alt="...">
+                    </a>
+                  </li>
+              </ul>
+          </div>   
+      </section>
+  </div>
+</nav>
+-->
+
+
+
+<!-- Barra de Menu Superior y Primera Sección -->
 <div class="container-fluid sticky-top fontsec"> 
-        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0 bg bg-dark bg-opacity-25">
             <a href="index.html" class="navbar-brand">
-                <img class="img-fluid i50x50 mt-2 ms-1" src="assets/Sol-LB.png">
+                <img class="img-fluid i50x50 mt-2 ms-1" src="assets/Sol-LB.png">                
             </a>
             <img class="img-fluid mt-2" src="assets/bandab50.png">        
 
-            <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button type="button" class="navbar-toggler ms-auto me-2" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
         
@@ -20,21 +76,24 @@
                     <a [href]="insta" class="nav-item nav-link" target="_blank">
                       <img src="assets/instagram.png" class="i30x30 me-2" alt="...">
                     </a>
+                    
                     <!--
                     <a href="https://wa.me/5493416626466" class="nav-item nav-link" target="_blank">
                       <img src="assets/whatsapp.png" class="i25x25 me-4" alt="...">
                     </a>
                     -->
+                    
                 </div>
             </div>
         </nav>
     
 </div>
 
+
 <div class="container-fluid py-5" id="fechas">
   <div class="row justify-content-center">
     <div class="col-md-5">
-    <div class="container card bg-dark bg-opacity-10 mb-5 bg-body-tertiary rounded"> 
+    <div class="container card bg-dark bg-opacity-10 mb-5 bg-body-tertiary rounded mt-5"> 
         <img src="assets/logo-LB380.png" class="img-fluid autocenter mt-4 object-fit-cover border border-success rounded" alt="...">
         <h3 class="card-title text-center text-white" style="font-style: italic;">
           en...
@@ -66,7 +125,7 @@
 
             <div class="col-lg-6">  
               
-                <div class="container-fluid card bg-opacity-10 bg bg-dark">
+                <div class="container-fluid card bg-opacity-10 bg bg-dark mt-5">
                     <img class="img-fluid rounded mt-2 mb-2 border border-secondary" src="assets/ojoenchivilcoy.jpg">
                 </div>
                  
@@ -118,7 +177,7 @@
               <!-- segundo disco -->
 
               <div class="col-lg-6">            
-                <div class="container-fluid card bg-opacity-10 bg bg-dark">
+                <div class="container-fluid card bg-opacity-10 bg bg-dark  mt-5">
                     <img class="img-fluid rounded mt-2 mb-2 border border-secondary" src="assets/solorock.jpg">
                 </div>
 
@@ -174,7 +233,7 @@
 <!-- Tercera seccion - Historia--> 
 <div class="container-fluid py-5 text-center" id="historia">
 
-    <div id="imagenes" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="imagenes" class="carousel slide carousel-fade  mt-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#imagenes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#imagenes" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -231,7 +290,9 @@
               Palta Producciones
             </b>
 
-        <a href="#" class="btn btn-outline-primary autocenter rounded-pill px-4 py-1 mb-3 mt-1"><i class="fa fa-arrow-up"></i></a>
+        <a href="#" class="btn btn-outline-primary autocenter rounded-pill px-4 py-1 mb-3 mt-1">
+          <i class="fa fa-arrow-up"></i>
+        </a>
     </div>
 </div>
 

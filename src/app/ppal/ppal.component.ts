@@ -17,6 +17,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 })
 export class PpalComponent {
 
+  
 voz = 'Lautaro González - VOZ';
 bateria = 'Lucio Battagliotti - BATERÍA';
 bajo = 'Pocho Detlefsen - BAJO';

@@ -6,7 +6,7 @@ import { PpalComponent } from './ppal/ppal.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,PpalComponent],
+  imports: [RouterOutlet, PpalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
