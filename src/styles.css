@@ -12,10 +12,8 @@ body {
 }
 
 /**/
-
 @font-face {
   font-family: "NewRocker";
-  /*src: url("assets/fonts/Philosopher-Regular.ttf");*/
   src: url("assets/fonts/NewRocker-Regular.ttf");
 }
 /**/
@@ -30,8 +28,20 @@ body {
 
 .fontsec {
     font-family: sans-serif, Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-style: normal;
-    font-weight: bold;
+    font-weight: initial;
   }
 
+  nav, /*es para los elementos del nav, en este caso si no lo pongo funciona igual*/
+  .offcanvas{
+    background-color: brown; /*este no lo estoy usando*/
+  }
+  .navbar-toggler{
+    border: none;
+    border-color:blanchedalmond;
+  }
+  .navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+  }

@@ -17,7 +17,6 @@ import { GoogleMapsModule } from '@angular/google-maps';
 })
 export class PpalComponent {
 
-  
 voz = 'Lautaro González - VOZ';
 bateria = 'Lucio Battagliotti - BATERÍA';
 bajo = 'Pocho Detlefsen - BAJO';
@@ -59,14 +58,16 @@ public discos =[
 
 
 public images =[
-  {id: 1, img:'assets/imgs/b1.jpg', txt1:'Primera Imagen', txt2: 'comentario de primera imagen'},
-  {id: 2, img:'assets/imgs/lautaro.jpg', txt1:'Lauty González', txt2: 'comentario sobre Lauty'},
-  {id: 3, img:'assets/imgs/b2.jpg', txt1:'Segunda Imagen', txt2: 'comentario de segunda imagen'},
-  {id: 4, img:'assets/imgs/matias.jpg', txt1:'Mati Zaffaroni', txt2: 'comentario sobre Matias'},
-  {id: 5, img:'assets/imgs/b3.jpg', txt1:'Tercera Imagen', txt2: 'comentario de tercera imagen'},
-  {id: 6, img:'assets/imgs/guille.jpg', txt1:'Pocho Detlefsen', txt2: 'comentario sobre Guille'},
-  {id: 7, img:'assets/imgs/b5.jpg', txt1:'Cuarta Imagen', txt2: 'comentario de cuarta imagen'},
-  {id: 8, img:'assets/imgs/lucio.jpg', txt1:'Lucio Battagliotti', txt2: 'comentario sobre Lucio'}
+  {id: 1, img:'assets/imgs/lautaro.jpg', txt1:'Lauty González', txt2: ''},
+  {id: 2, img:'assets/imgs/matias.jpg', txt1:'Mati Zaffaroni', txt2: ''},
+  {id: 3, img:'assets/imgs/guille.jpg', txt1:'Pocho Detlefsen', txt2: ''},
+  {id: 4, img:'assets/imgs/lucio.jpg', txt1:'Lucio Battagliotti', txt2: ''},
+
+  {id: 5, img:'assets/imgs/b1.jpg', txt1:'', txt2: ''},
+  {id: 6, img:'assets/imgs/b2.jpg', txt1:'', txt2: ''},
+  {id: 7, img:'assets/imgs/b3.jpg', txt1:'', txt2: ''},
+  {id: 8, img:'assets/imgs/b5.jpg', txt1:'', txt2: ''}
+
 ];
 
   ngOnInit() {}
@@ -82,7 +83,6 @@ public images =[
     }
   }
   
-
   exitModal = (): void => {
     this.modalRef?.hide();
   };
