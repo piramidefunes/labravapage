@@ -8,7 +8,7 @@ body {
 
   .autocenter{
     width: auto;
-    margin: auto auto; 
+    margin:0 auto; 
 }
 
 /**/
@@ -44,4 +44,31 @@ body {
   .navbar-toggler:focus{
     outline: none;
     box-shadow: none;
+  }
+
+  .time_4 {
+    --animate-duration: 4s;
+  }
+
+  @keyframes anima{
+    from{
+      opacity: 0;
+      scale: 25%;
+    }
+    to{
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+
+  .ani {
+    view-timeline-name: --imagen;
+    view-timeline-axis: block;
+
+    animation-timeline: --imagen;
+    animation-name: anima;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
   }
