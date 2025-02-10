@@ -50,6 +50,16 @@ body {
     --animate-duration: 4s;
   }
 
+  .ani {
+    view-timeline-name: --imagen;
+    view-timeline-axis: block;
+
+    animation-timeline: --imagen;
+    animation-name: anima;
+
+    animation-range: entry 20% cover 40%;
+    animation-fill-mode: both;
+  }
   @keyframes anima{
     from{
       opacity: 0;
@@ -61,14 +71,28 @@ body {
     }
   }
 
-  .ani {
-    view-timeline-name: --imagen;
-    view-timeline-axis: block;
-
-    animation-timeline: --imagen;
-    animation-name: anima;
-
-    animation-range: entry 25% cover 50%;
-    animation-fill-mode: both;
-
+  .sli_1 {
+    animation-duration: 1s;
+    animation-name: slidein;
+    /*animation-iteration-count: infinite; se repite indefinidamente*/
+    /*animation-direction: alternate; entra y sale*/
+  }
+  @keyframes slidein {
+    from {
+      font-size: 400%;
+      margin-top: 200%;
+      width: 100%;
+    }
+    /*
+    50% {
+      font-size: 300%;
+      margin-top: 50%;
+      width: 120%;
+    }
+    */
+    to {
+      font-size: 200%;
+      margin-top: 0%;
+      width: 100%;
+    }
   }
