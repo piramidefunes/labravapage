@@ -11,13 +11,10 @@ body {
     margin:0 auto; 
 }
 
-/**/
 @font-face {
   font-family: "NewRocker";
   src: url("assets/fonts/NewRocker-Regular.ttf");
 }
-/**/
-
 
 .fontgral {
   font-family: NewRocker, Geneva, Tahoma, sans-serif;
@@ -33,9 +30,9 @@ body {
     font-weight: initial;
   }
 
-  nav, /*es para los elementos del nav, en este caso si no lo pongo funciona igual*/
+  nav, /**/
   .offcanvas{
-    background-color: brown; /*este no lo estoy usando*/
+    background-color: brown; /**/
   }
   .navbar-toggler{
     border: none;
@@ -71,11 +68,9 @@ body {
     }
   }
 
-  .sli_1 {
-    animation-duration: 1s;
+  .sli_2 {
+    animation-duration: 1500ms;
     animation-name: slidein;
-    /*animation-iteration-count: infinite; se repite indefinidamente*/
-    /*animation-direction: alternate; entra y sale*/
   }
   @keyframes slidein {
     from {
@@ -83,13 +78,6 @@ body {
       margin-top: 200%;
       width: 100%;
     }
-    /*
-    50% {
-      font-size: 300%;
-      margin-top: 50%;
-      width: 120%;
-    }
-    */
     to {
       font-size: 200%;
       margin-top: 0%;

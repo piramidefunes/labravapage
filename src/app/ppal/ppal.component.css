@@ -1,21 +1,16 @@
-.i30x30{
+.i30c{
     height: 30px;
     width: 30px;    
 }
-.i40x60{
-    height: 60px;
-    width: 80px;
-}
-.i50x50{
+
+.i50c{
     height: 50px;
     width: 50px;
 }
+
 .i250{
     height: 250px;
     width: 250px;
-}
-.fz12{
-    font-size:1.2rem;
 }
 
 .cursor {

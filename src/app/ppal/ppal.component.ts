@@ -22,10 +22,15 @@ bateria = 'Lucio Battagliotti - BATERÍA';
 bajo = 'Pocho Detlefsen - BAJO';
 guitarra = 'Matías Zaffaroni - GUITARRA';
 
-  escenario = 'assets/escenarios/somosmusica.png';
-  fecha = '16 de Noviembre del 2024';
   entradas = '... pedilas por nuestro Instagram';
+
+  escenario = 'assets/escenarios/somosmusica.png';
+  fecha = '28 de Febrero del 2025';
   direccion = 'San Martín 1372 - Rosario';
+
+  escenario1 = 'assets/escenarios/quesearock2.png';
+  fecha1 = '1 de Marzo del 2025';
+  direccion1 = 'Santa Fe 1166 - Rosario';
 
   you1 = 'https://www.youtube.com/watch?v=TtqFtIzlxhU&list=OLAK5uy_lqMcBPznr5IVZA-gMsJe09-GM92_Dmn-c';
   you2 = 'https://www.youtube.com/watch?v=rEva-wQt51I&list=OLAK5uy_mDQ-XxTRu0T3OO5ixYUTjCbJ-SExwgbk0';

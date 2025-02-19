@@ -1,11 +1,11 @@
 
 <!-- Barra de Menu -->
-<nav class="navbar navbar-expand-lg sticky-top fontsec bg-dark bg-opacity-10
-            ">
+<nav class="navbar navbar-expand-lg sticky-top fontsec bg-dark bg-opacity-10">
+            
   <div class="container-fluid">
       
       <a href="index.html" class="navbar-brand">
-        <img class="img-fluid i50x50 mt-2 ms-1" src="assets/Sol-LB.png">                
+        <img class="img-fluid i50c mt-2 ms-1" src="assets/Sol-LB.png">                
       </a>
 
       <img class="img-fluid mt-2 animate__animated animate__backInRight" src="assets/bandab50.png">
@@ -49,14 +49,9 @@
                   </li>
                   <li class="navbar-item p-1 py-md-1">
                     <a [href]="insta" class="nav-item nav-link" target="_blank">
-                    <img src="assets/instagram.png" class="i30x30 me-2" alt="...">
+                    <img src="assets/instagram.png" class="i30c me-2" alt="...">
                     </a>
                   </li>
-                  <!--
-                  <a href="https://wa.me/5493416626465" class="nav-item nav-link" target="_blank">
-                    <img src="assets/whatsapp.png" class="i25x25 me-4" alt="...">
-                  </a>
-                -->
               </ul>
           </div>   
       </section>
@@ -65,8 +60,10 @@
 
 <!-- Primera Sección -->
 <div class="container-fluid py-5" id="fechas">
-  <div class="row justify-content-center">
+  <div class="row justify-content-center g-5">
+
     <div class="col-md-5">
+    
     <div class="container card bg-dark bg-opacity-10 mb-5 bg-body-tertiary rounded mt-5"> 
         <img src="assets/logo-LB380.png" class="img-fluid  mt-2 object-fit-cover 
               border border-success rounded animate__animated animate__fadeIn time_4" alt="...">
@@ -86,12 +83,40 @@
             </a>
         </div>
     </div>
-    </div>
+  </div>
+</div>
+
+  <div class="row justify-content-center g-5">
+
+    <div class="col-md-5">
+    
+      <div class="container card bg-dark bg-opacity-10 mb-5 bg-body-tertiary rounded mt-5"> 
+          <img src="assets/logo-LB380.png" class="img-fluid  mt-2 object-fit-cover 
+                border border-success rounded animate__animated animate__fadeIn time_4" alt="...">
+          <h3 class="card-title text-center text-white" style="font-style: italic;">
+            en...
+          </h3>
+          <img [src]="escenario1" class=" img-fluid autocenter mt-2 i250 ani" alt="...">
+          <div class="card-body">
+              <h3 class="card-title text-white text-center" style="font-size: 3rem;">
+                {{fecha1}}
+              </h3>
+              <p class="card-text text-white text-center " style="font-size: 1.25rem;">
+                <i>Entradas, {{entradas}}</i>
+              </p>
+              <a (click)="verEnMapa()" class="btn btn-outline-primary px-4 py-0 rounded-pill fontsec">
+                Ubicación
+              </a>
+          </div>
+      </div>
+    
+
   </div>
 </div>
 
 <!-- Segunda Sección -->
 <div class="container-fluid py-5" id="discos">
+
     <div class="container text-center">
         <div class="row g-5 justify-content-center">
 
@@ -254,9 +279,9 @@
     </div>
 </div>
 
-<div class="container mt-3 mb-5">
+<div class="container-fluid mt-3 mb-5">
     <div class="card bg-dark bg-opacity-10 mb-3 rounded text-center"> 
-        <img src="assets/Sol-LB.png" class=" img-fluid i50x50 autocenter" alt="...">
+        <img src="assets/Sol-LB.png" class=" img-fluid i50c autocenter" alt="...">
 
             <b class="text-white" style="font-size: 1.25rem;">
               La Nueva Generación del Rock Rosarino
@@ -272,10 +297,11 @@
           <i class="fa fa-arrow-up"></i>
         </a>
     </div>
+
 </div>
 
 
-<!-- llamado al modalSong --> 
+<!-- llamando al modalSong --> 
 <ng-template #modalSong>
     <app-modalsong [tema]="song" [exitModal]="exitModal"/>
 </ng-template>

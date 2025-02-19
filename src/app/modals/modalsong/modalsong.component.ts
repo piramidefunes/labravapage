@@ -16,14 +16,14 @@ export class ModalsongComponent {
 
   song: any = null;
   title: any = null;
-  cancion: any = null;
+  //cancion: any = null;
   audio: any = null;
 
   ngOnInit() {
     
     const orden = this.tema.id;
     this.title = this.tema.titulo;
-    this.cancion = "assets/audios/"+(this.title)+".mp3";
+    //this.cancion = "assets/audios/"+(this.title)+".mp3";
 
 switch (orden) {
     case 1:
@@ -71,7 +71,7 @@ switch (orden) {
 }
 }
 
-
+/*
 reproducir() {
   this.audio = new Audio(this.cancion);
   this.audio.play();
@@ -79,6 +79,7 @@ reproducir() {
 pausar() {
   this.audio.pause();
 }
+*/
 
 /* canciones ojo en chivilcoy*/
 /* contrato social */

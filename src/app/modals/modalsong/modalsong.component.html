@@ -1,22 +1,21 @@
 
 <div class="card flex flex-col text-primary text-center bg-dark border border-primary fontsec">
 
-    <div class="mt-3 d-flex justify-content-between">
+    <div class="mt-3 d-flex justify-content-center">
         <span class="btn btn-outline-primary px-3 py-2 rounded-pill mb-1 ms-4" (click)="exitModal()">
             <i class="fa fa-arrow-left"></i>
         </span>
-        <span class=" me-4">
-            <audio controls style="height: 40px; width: 180px;">
-                <source [src]="cancion" type="audio/mpeg">
-            </audio> 
-        </span>
     </div>
-
-        <i class="fontgral sli_1" style="font-size: 2rem; font-style: italic;"> {{title}} </i>
+    
+        <i class="fontgral sli_2" style="font-size: 2rem; font-style: italic;"> {{title}} </i>
+    
     <hr>
+    
     @for (verso of song; track $index) {
     <p class="my-0"> {{song[$index]}}</p> 
     }
+
+    
     
     <div class="flex mb-3 mt-3">
         <div class="btn btn-outline-primary px-3 py-0 text-center rounded-pill" style="font-size:.85rem;"(click)="exitModal()" >
